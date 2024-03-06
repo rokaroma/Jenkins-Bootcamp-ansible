@@ -1,0 +1,11 @@
+---
+name: Install Git
+hosts: all
+become: true
+gather_facts: yes
+
+tasks:  
+  - name: Install the software
+    package:
+      name: git
+      state: present
